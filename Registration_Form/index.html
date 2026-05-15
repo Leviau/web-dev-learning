@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="page-wrapper">
+    <section class="form-card">
+      <h1>Sign Up</h1>
+
+      <div class="section-title">
+        <span class="dot"></span>
+        <h2>Your basic info</h2>
+      </div>
+
+      <form action="#" method="post">
+
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input 
+            type="text" 
+            id="firstName" 
+            name="firstName" 
+            required 
+            placeholder="Enter your first name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input 
+            type="text" 
+            id="lastName" 
+            name="lastName" 
+            required 
+            placeholder="Enter your last name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            placeholder="example@email.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            required 
+            minlength="8"
+            placeholder="At least 8 characters"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input 
+            type="password" 
+            id="confirmPassword" 
+            name="confirmPassword" 
+            required 
+            minlength="8"
+            placeholder="Confirm your password"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input 
+            type="date" 
+            id="dob" 
+            name="dob" 
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Gender:</label>
+
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="gender" value="male" required />
+              Male
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="female" />
+              Female
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="other" />
+              Other
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="about">About Me:</label>
+          <textarea 
+            id="about" 
+            name="about" 
+            rows="4" 
+            placeholder="Tell us something about yourself"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="profession">Choose Your Profession:</label>
+          <select id="profession" name="profession" required>
+            <option value="">Select your profession</option>
+            <option value="web-development">Web Development</option>
+            <option value="data-analytics">Data Analytics</option>
+            <option value="ui-ux-design">UI/UX Design</option>
+            <option value="digital-marketing">Digital Marketing</option>
+            <option value="cyber-security">Cyber Security</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Create Account</button>
+
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
